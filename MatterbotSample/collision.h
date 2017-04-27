@@ -38,7 +38,6 @@ namespace lospi
 
 	void create_rainbow()
 	{
-		std::string alpha = "hsoj";
 
 		for (int i = 0; i < (level + 10); i++)
 		{

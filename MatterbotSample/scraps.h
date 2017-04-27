@@ -21,11 +21,12 @@ namespace lospi {
 				if (!command_text.empty())
 				{
 					bot->post_message(explosions(command_text));
+					_sleep(1050);
 					return L"rivestment scraps";
 				}
 				else
 				{
-					return L"rivestment challenge";
+					return L"rivestment challenge " + std::to_wstring(challenge_num);
 				}
 			}
 			else

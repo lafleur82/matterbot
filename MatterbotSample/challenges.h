@@ -2,6 +2,7 @@
 #include "Matterbot.h"
 #include "collision.h"
 #include "Header.h"
+#include "pause.h"
 #include <algorithm>
 
 namespace lospi {
@@ -27,16 +28,15 @@ namespace lospi {
 			}
 			else if (user.find(L"rivestment") != std::wstring::npos)
 			{
-				std::wstring try_str = explosions(command_text);
-				//return the command to get the current point total which will call this command again
-				if (try_str.empty())
+				if (command_text.empty())
 				{
 					return L"Something bad happened... stopping loop.";
 				}
 				else
 				{
-					bot->post_message(try_str);
-					_sleep(1000);
+					_sleep(sleepTime);
+					bot->post_message(explosions(command_text));
+					_sleep(sleepTime);
 					return L"rivestment challenge " + std::to_wstring(challenge_num);
 				}
 			}

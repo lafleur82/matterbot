@@ -77,7 +77,7 @@
     <ClInclude Include="startup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="test.h">
+    <ClInclude Include="pause.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

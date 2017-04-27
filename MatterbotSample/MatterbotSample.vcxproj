@@ -175,6 +175,7 @@
     <ClInclude Include="ConsoleLogger.h" />
     <ClInclude Include="hash.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="pause.h" />
     <ClInclude Include="lvl.h" />
     <ClInclude Include="Md5.h" />
     <ClInclude Include="Md5Utilities.h" />
@@ -185,7 +186,6 @@
     <ClInclude Include="ReverseCommand.h" />
     <ClInclude Include="DadJoke.h" />
     <ClInclude Include="scraps.h" />
-    <ClInclude Include="test.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
