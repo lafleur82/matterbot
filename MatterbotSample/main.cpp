@@ -34,7 +34,7 @@ int main() {
     bot->register_command(make_shared<EchoCommand>());
     bot->register_command(make_shared<ReverseCommand>(bot));
 	bot->register_command(make_shared<DadJoke>());
-	//bot->register_command(make_shared<challenges>(bot));
+	bot->register_command(make_shared<challenges>(bot));
 	bot->register_command(make_shared<startup>(bot));
 	bot->register_command(make_shared<scraps>(bot));
 	bot->register_command(make_shared<cc>());

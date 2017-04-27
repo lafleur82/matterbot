@@ -21,7 +21,7 @@ namespace lospi {
 				if (!command_text.empty())
 				{
 					bot->post_message(explosions(command_text));
-					_sleep(1050);
+					_sleep(sleepTime);
 					return L"rivestment scraps";
 				}
 				else

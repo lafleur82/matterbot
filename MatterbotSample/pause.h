@@ -20,7 +20,7 @@ namespace lospi
 			if (user.find(L"jlafleur") != std::wstring::npos)
 			{
 				sleepTime = std::stoi(command_text);
-				return L"SleepTime request number has been changed to " + command_text;
+				return L"Sleep time has been changed to " + command_text;
 			}
 			else
 			{
